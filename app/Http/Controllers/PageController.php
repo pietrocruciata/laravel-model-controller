@@ -8,7 +8,7 @@ class PageController extends Controller
 {
     public function index(){
 
-        $movies = movie::all(); 
+        $movies = Movie::all(); 
         
         return view('app', compact('movies'));
     }
